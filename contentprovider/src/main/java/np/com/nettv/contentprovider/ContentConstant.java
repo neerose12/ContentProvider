@@ -7,5 +7,6 @@ public class ContentConstant {
     public static final String RECENT = "recent";
     public static final String CHANNELID = "channel_id";
     public static final String CHANNELTYPE = "channel_type";
+    public static final String ACTION = "com.wlink.nettv.leanbacklivetv.action";
 
 }
