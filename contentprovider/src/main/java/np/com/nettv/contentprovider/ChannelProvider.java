@@ -35,7 +35,7 @@ public class ChannelProvider extends ContentProvider {
   }
 
   private static final String SCHEME = "content://";
-  private static final String AUTHORITY = "np.com.nettv.provider";
+  private static final String AUTHORITY = "np.com.nettv.contentprovider";
 
   public static final Uri CHANNEL_URI = Uri.parse(SCHEME + AUTHORITY + "/channel");
   public static final Uri CHANNEL_URI_BASE = Uri.parse(SCHEME + AUTHORITY + "/channel/");
