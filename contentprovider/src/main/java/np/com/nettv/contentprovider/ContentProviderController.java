@@ -35,8 +35,6 @@ public class ContentProviderController {
             e.printStackTrace();
             channelContents = new ArrayList<>();
         }
-        int numColumns = c.getCount();
-        Log.d("checkingContent", "columv   " + numColumns);
         if (c != null) {
             while (c.moveToNext()) {
                 channelContents.add(new ChannelContent(c));
