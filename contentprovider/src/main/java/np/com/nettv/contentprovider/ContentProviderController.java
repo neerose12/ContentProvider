@@ -33,7 +33,7 @@ public class ContentProviderController {
                     null, null, null, null);
         } catch (RemoteException e) {
             e.printStackTrace();
-            channelContents = null;
+            channelContents = new ArrayList<>();
         }
         int numColumns = c.getCount();
         Log.d("checkingContent", "columv   " + numColumns);
