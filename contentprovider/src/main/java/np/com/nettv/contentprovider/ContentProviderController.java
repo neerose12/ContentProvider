@@ -31,7 +31,7 @@ public class ContentProviderController {
         try {
             c = content.query(ChannelProvider.CHANNEL_URI,
                     null, null, null, null);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             channelContents = new ArrayList<>();
         }
