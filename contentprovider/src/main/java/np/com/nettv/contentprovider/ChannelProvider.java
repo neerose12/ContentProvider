@@ -31,7 +31,6 @@ public class ChannelProvider extends ContentProvider {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-      // Upgrade logic goes here
     }
   }
 
