@@ -46,8 +46,9 @@ public class ContentProviderController {
 
 
     public void deleteChannelAll(){
-        context.getContentResolver().delete(ChannelProvider.CHANNEL_URI, null,null);
+        context.getContentResolver().delete(ChannelProvider.CHANNEL_URI, "1",null);
     }
+
     public void deleteChannel(int channelId,String type){
         String[] selctionArg = {String.valueOf(channelId),type};
 
