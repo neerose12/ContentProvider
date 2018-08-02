@@ -26,10 +26,10 @@ public class ContentProviderController {
 
     public List<ChannelContent> getChannels() {
         List<ChannelContent> channelContents = new ArrayList<>();
-        ContentProviderClient content = context.getContentResolver().acquireContentProviderClient(ChannelProvider.CHANNEL_URI);
+//        ContentProviderClient content = context.getContentResolver().acquireContentProviderClient(ChannelProvider.CHANNEL_URI);
         Cursor c = null;
         try {
-            c = content.query(ChannelProvider.CHANNEL_URI,
+            c = context.getContentResolver().query(ChannelProvider.CHANNEL_URI,
                     null, null, null, null);
         } catch (Exception e) {
             e.printStackTrace();

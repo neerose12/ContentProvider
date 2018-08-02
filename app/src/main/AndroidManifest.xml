@@ -17,11 +17,12 @@
             </intent-filter>
         </activity>
 
-        <!--<provider-->
-        <!--android:name="np.com.nettv.contentprovider.ChannelProvider"-->
-        <!--android:authorities="np.com.nettv.provider"-->
-        <!--android:exported="false" >-->
-        <!--</provider>-->
+        <provider
+            android:name="np.com.nettv.contentprovider.ChannelProvider"
+            android:authorities="np.com.nettv.contentprovider"
+            android:exported="false"
+
+            android:readPermission="android.permission.permRead"></provider>
     </application>
 
 </manifest>
