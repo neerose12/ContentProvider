@@ -3,6 +3,7 @@ package content.nettv.com.np.content;
 import android.content.ContentValues;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import np.com.nettv.contentprovider.ChannelContent;
 import np.com.nettv.contentprovider.ContentProviderController;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         contentProviderController = new ContentProviderController(this);
         saveChannels();
+
     }
 
 
@@ -28,5 +30,7 @@ public class MainActivity extends AppCompatActivity {
         contentValues.put(ChannelContent.Columns.CHANNELLOGO,"Logo");
         contentValues.put(ChannelContent.Columns.CHANNELTYPE,"fav");
         contentProviderController.save(contentValues);
+
+        Log.d("CHckingSuze",contentProviderController.getChannels().size()+"  ");
     }
 }
